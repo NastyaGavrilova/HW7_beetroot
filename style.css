@@ -6,32 +6,34 @@
 }
 html {
   height: 100%;
+  margin: 0 auto;
 }
 
 /* стилизация для рамки, цвет шрифта, и стиль шривта */
 body {
   background-color: #3399cc;
   border: 20px solid #2b81ac;
-  min-height: 100%;
+  /* min-height: 100%; */
+  margin: 0;
+  max-width: 1170px;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /* ширина обертки*/
 .wrapper {
-  max-width: 1170px;
   margin: 0 auto;
   /* max-width: 700px; */
 }
 
 /* размещение шапки */
 .weather-header {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   padding: 20px 0 20px;
 }
 /* размешение и стилизация навигации */
 .navigation {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   margin-top: 20px;
   border: 2px solid #fff;
   background-color: #fff;
@@ -53,13 +55,13 @@ h1 {
   font-size: 26px;
   text-transform: capitalize;
 }
-main {
+/* main {
   max-width: 1170px;
-}
+} */
 
 /* обнуление стиля списка*/
 .city-list {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   list-style-type: none;
   font-size: 0;
   border: 2px solid #fff;
