@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s ease-in;
+}
+html {
+  height: 100%;
+}
+
+/* стилизация для рамки, цвет шрифта, и стиль шривта */
+body {
+  background-color: #3399cc;
+  border: 20px solid #2b81ac;
+  min-height: 100%;
+  color: #fff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* ширина обертки*/
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* размещение шапки */
+.weather-header {
+  padding: 20px 0 20px;
+}
+/* размешение и стилизация навигации */
+.navigation {
+  margin-top: 20px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  width: 10%;
+  text-align: center;
+  border-radius: 2px;
+  color: #2b81ac;
+}
+
+/* стилизация ссылки под кнопку  */
+.navigation a {
+  font-weight: bold;
+  color: #2b81ac;
+  text-decoration: none;
+}
+/* стилизация первого заголовка */
+h1 {
+  font-weight: 500;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+/* обнуление стиля списка*/
+.city-list {
+  list-style-type: none;
+  font-size: 0;
+  border: 2px solid #fff;
+  /* background-color: #fff; */
+}
+
+/* при наведении на элемент списка все остальные становяться прозрачными */
+.city-list:hover > li {
+  opacity: 0.7;
+}
+
+/* стилизация элементов списка */
+.city-list li {
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* принаведение на элемент списка он становиться не прозрачным */
+.city-list > li:hover {
+  opacity: 1;
+}
+
+/* цвет фона эелементов */
+.city-list li:nth-child(1n) {
+  background-color: #39c;
+}
+.city-list li:nth-child(2n) {
+  background-color: #33cccc;
+}
+.city-list li:nth-child(3n) {
+  background-color: #996699;
+}
+.city-list li:nth-child(4n) {
+  background-color: #c24747;
+}
+.city-list li:nth-child(5n) {
+  background-color: #e2674a;
+}
+.city-list li:nth-child(6n) {
+  background-color: #ffcc66;
+}
+.city-list li:nth-child(7n) {
+  background-color: #99cc99;
+}
+.city-list li:nth-child(8n) {
+  background-color: #669999;
+}
+.city-list li:nth-child(9n) {
+  background-color: #cc6699;
+}
+.city-list li:nth-child(10n) {
+  background-color: #339966;
+}
+.city-list li:nth-child(11n) {
+  background-color: #666699;
+}
+
+/* ширина элемнтов относительно родителя */
+.city-list li.single-city {
+  width: 25%;
+}
+
+.city-list li.double-city {
+  width: 50%;
+}
+
+.city-list li.full-city {
+  width: 100%;
+}
+
+/* цвет шрифта эелементов списка */
+.city-weather {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+/* стиль для иконок */
+.city-weather i {
+  font-size: 30px;
+  vertical-align: bottom;
+}
+
+/* подвал */
+.wether-footer {
+  margin: 20px 200px;
+  font-size: 17px;
+}
